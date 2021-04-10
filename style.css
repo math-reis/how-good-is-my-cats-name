@@ -1,15 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+/* Global Style */
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
 }
 
 h1 {
-  font-size: 42px;
-  font-weight: 300;
+  font-size: 32px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  color: rgb(45, 45, 45);
 }
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  padding: 15px 15px 15px 30px;
+  box-shadow: 0px 1px 3px rgba(255, 255, 255, 0.25);
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+}
+
+.caseZero {
+  background-color: rgb(45, 45, 45);
+  padding: 30px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.caseZero p {
+  color: whitesmoke;
+  margin: 0;
+}
+
+/* @media (min-width: 720px) {
+  .task-3-1.container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+  }
+
+  .task-3-1 .header {
+    grid-column: 1 / span 12;
+  }
+
+  .task-3-1 .navigation {
+    grid-column: 1 / span 12;
+  }
+
+  .task-3-1 .main {
+    grid-column: 1 / span 12;
+  }
+
+  .task-3-1 .footer {
+    grid-column: 1 / span 12;
+  }
+}
+
+@media (min-width: 1020px) {
+  .task-3-1 .navigation {
+    grid-column: 1 / span 12;
+  }
+
+  .task-3-1 .main {
+    grid-column: 1 / span 12;
+  }
+  .task-3-1 .footer {
+    grid-column: 1 / span 12;
+  }
+} */
