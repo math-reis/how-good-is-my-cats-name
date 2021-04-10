@@ -47,6 +47,8 @@ a {
 
 header {
   padding: 15px 15px 15px 30px;
+  /* border-bottom: 1px solid black; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -54,22 +56,24 @@ header h1 {
 }
 
 .caseZero {
-  padding: 30px;
-  background-color: rgb(45, 45, 45);
+  padding: 30px 30px 0 30px;
   text-align: justify;
 
 }
 
 .caseZero p {
-  color: whitesmoke;
   line-height: 2;
   margin: 0;
 }
 
 .caseOne{
   padding: 30px;
+  text-align: justify;
+}
 
-
+.caseOne p{
+  line-height: 2;
+  /* margin: 0; */
 }
 
 /* @media (min-width: 720px) {
