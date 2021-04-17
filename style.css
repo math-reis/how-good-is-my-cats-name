@@ -21,20 +21,39 @@ body {
 }
 
 .container {
-  display: grid;
-  height: 100vh;
-  grid-template-rows: auto 1fr auto;
+  /* display: grid; */
+  /* height: 100vh; */
+  /* grid-template-rows: auto 1fr auto; */
 }
 
 .main {
   display: grid;
-  margin: 50px;
+  padding: 25px;
+  width: 100%;
   justify-content: left;
 }
 
 /* Collapse */
 
 .collapsible {
+  display: flex;
+  width: 100%;
+  padding: 0 275px 0 10px;
+}
+
+.collapsible h2 {
+  font-size: 14px;
+  align-self: center;
+  margin: 0 0 0 10px;
+  justify-content: left;
+}
+
+.collapsible img {
+  width: 30px;
+  margin: 0;
+}
+
+/* .collapsible {
   display: flex;
   margin: 15px 0 15px 0;
   padding: 10px;
@@ -57,22 +76,20 @@ body {
   margin: 0;
   padding: 0;
   width: 30px;
-}
+} */
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
+/* .active,
 .collapsible:hover {
   background-color: transparent;
-}
+} */
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 10px;
-  margin: 10px;
-  background-color: blue;
+/* .content {
+  margin: 0 0 0 15px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
+  transition: max-height 0.5s ease-out;
+} */
 
 /* 
 @media (min-width: 720px) {
