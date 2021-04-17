@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
 
 * {
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
 }
 
 ul {
@@ -15,22 +13,54 @@ a {
 }
 
 body {
+  margin: 0 auto;
+  padding: 0;
   font-family: "Inter", sans-serif;
-  color: rgb(129, 105, 216);
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
+  color: rgb(30, 30, 30);
 }
 
 .container {
-  /* display: grid; */
-  /* height: 100vh; */
-  /* grid-template-rows: auto 1fr auto; */
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  padding: 25px;
+  background-color: whitesmoke;
+}
+
+.logo {
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(30, 30, 30);
+  letter-spacing: 1px;
 }
 
 .main {
-  display: grid;
   padding: 25px;
   width: 100%;
-  justify-content: left;
+  background-color: white;
+}
+
+.intro {
+  display: grid;
+}
+
+.intro img {
+  width: 100%;
+}
+
+.intro h2 {
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: center;
+  margin: 25px 50px 25px 50px;
 }
 
 /* Collapse */
@@ -38,58 +68,58 @@ body {
 .collapsible {
   display: flex;
   width: 100%;
-  padding: 0 275px 0 10px;
-}
-
-.collapsible h2 {
-  font-size: 14px;
-  align-self: center;
-  margin: 0 0 0 10px;
-  justify-content: left;
-}
-
-.collapsible img {
-  width: 30px;
-  margin: 0;
-}
-
-/* .collapsible {
-  display: flex;
-  margin: 15px 0 15px 0;
-  padding: 10px;
-  width: 100%;
   cursor: pointer;
-  border: 2px solid rgb(135, 255, 111);
-  border-radius: 1rem;
-  background-color: transparent;
+  background-color: whitesmoke;
+  border: 2px solid rgb(102, 51, 153, 0.25);
+  border-radius: 5px;
+  margin: 15px 0 15px 0;
 }
 
 .collapsible h2 {
-  margin: 0 15px 0 15px;
-  font-size: 14px;
-  font-weight: lighter;
-  letter-spacing: 2px;
+  margin: 0 0 0 10px;
   align-self: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(30, 30, 30);
 }
 
 .collapsible img {
-  margin: 0;
-  padding: 0;
   width: 30px;
-} */
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-/* .active,
-.collapsible:hover {
-  background-color: transparent;
-} */
+  margin: 0;
+}
 
-/* Style the collapsible content. Note: hidden by default */
-/* .content {
-  margin: 0 0 0 15px;
+.active,
+.collapsible:hover {
+  background-color: rgb(102, 51, 153, 0.15);
+  border: 2px solid rgba(74, 7, 141, 0.35);
+}
+
+.content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-} */
+  border: 1px dashed rgba(74, 7, 141, 0.35);
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.content a {
+  font-size: 16px;
+  color: rgb(30, 30, 30, 0.9);
+  font-weight: 300;
+}
+
+.content p {
+  font-size: 14px;
+  margin: 5px 0 15px 10px;
+  color: rgb(30, 30, 30, 0.75);
+  font-weight: 200;
+}
+
+.content img {
+  width: 18px;
+  vertical-align: bottom;
+}
 
 /* 
 @media (min-width: 720px) {
