@@ -2,49 +2,78 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
   font-family: "Inter", sans-serif;
-  color: #333;
-  background-color: snow;
-  /* margin: 0 auto; */
+  color: rgb(129, 105, 216);
+  background-color: whitesmoke;
 }
 
 .container {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  gap: 24px;
 }
+
+.main {
+  display: grid;
+  margin: 50px;
+  justify-content: left;
+}
+
+/* Collapse */
 
 .collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
+  display: flex;
+  margin: 15px 0 15px 0;
+  padding: 10px;
   width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid rgb(135, 255, 111);
+  border-radius: 1rem;
+  background-color: transparent;
 }
 
+.collapsible h2 {
+  margin: 0 15px 0 15px;
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  align-self: center;
+}
+
+.collapsible img {
+  margin: 0;
+  padding: 0;
+  width: 30px;
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
+.active,
+.collapsible:hover {
+  background-color: transparent;
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 0 18px;
-  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  background-color: blue;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
 /* 
 @media (min-width: 720px) {
   .task-3-1.container {
