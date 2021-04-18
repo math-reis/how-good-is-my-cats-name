@@ -1,6 +1,6 @@
 # rota startup
 
-A web application that provides questions for those who are preparing for a job interview.
+A website that provides a compilation of materials on entrepreneurship and startup.
 
 ## App Demo
 
