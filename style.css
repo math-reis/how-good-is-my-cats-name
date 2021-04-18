@@ -31,9 +31,6 @@ header {
   background-color: whitesmoke;
 }
 
-.logo {
-}
-
 .logo h1 {
   margin: 0;
   font-size: 24px;
@@ -52,15 +49,15 @@ header {
   display: grid;
 }
 
-.intro img {
-  width: 100%;
-}
-
 .intro h2 {
   font-weight: 200;
   line-height: 1.5;
   text-align: center;
   margin: 25px 50px 25px 50px;
+}
+
+.intro img {
+  width: 100%;
 }
 
 /* Collapse */
@@ -79,7 +76,8 @@ header {
   margin: 0 0 0 10px;
   align-self: center;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
+  letter-spacing: 1px;
   color: rgb(30, 30, 30);
 }
 
@@ -97,7 +95,7 @@ header {
 .content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.75s ease-out;
   border: 1px dashed rgba(74, 7, 141, 0.35);
   border-radius: 5px;
   background-color: whitesmoke;
@@ -121,51 +119,89 @@ header {
   vertical-align: bottom;
 }
 
-/* 
+.footer {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.footer a,
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(30, 30, 30);
+}
+
 @media (min-width: 720px) {
-  .task-3-1.container {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto 1fr auto;
+  .intro {
+    display: flex;
   }
 
-  .task-3-1 .header {
-    grid-column: 1 / span 12;
-  }
-
-  .task-3-1 .main {
-    grid-column: 3 / span 10;
-    grid-row: 2 / 4;
-  }
-
-  .task-3-1 .sidebar {
-    grid-column: 1 / span 2;
-    grid-row: 2 / 4;
-  }
-
-  .task-3-1 .ads {
-    grid-column: 1 / span 2;
-  }
-
-  .task-3-1 .footer {
-    grid-column: 3 / span 10;
+  .intro h2 {
+    display: flex;
+    align-self: center;
   }
 }
 
 @media (min-width: 1020px) {
-  .task-3-1 .main {
-    grid-column: 3 / span 8;
+  header {
+    padding: 25px 50px 25px 50px;
+  }
+  .main {
+    padding: 25px 50px 25px 50px;
   }
 
-  .task-3-1 .sidebar {
-    grid-row: 2 / 4;
+  .intro {
+    display: flex;
   }
 
-  .task-3-1 .ads {
-    grid-column: 11 / span 2;
-    grid-row: 2 / 4;
+  .intro h2 {
+    display: flex;
+    align-self: center;
   }
 
-  .task-3-1 .footer {
-    grid-column: 1 / span 12;
+  .intro img {
+    width: 50%;
   }
-} */
+}
+
+@media (min-width: 1080px) {
+  header {
+    padding: 25px 75px 25px 75px;
+  }
+  .main {
+    padding: 25px 75px 25px 75px;
+  }
+  .intro h2 {
+    margin: 0 100px 0 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  header {
+    padding: 25px 100px 25px 100px;
+  }
+  .main {
+    padding: 25px 100px 25px 100px;
+  }
+
+  .intro h2 {
+    margin: 0 150px 0 150px;
+  }
+}
+
+@media (min-width: 1475px) {
+  header {
+    padding: 25px 150px 25px 150px;
+  }
+  .main {
+    padding: 25px 150px 25px 150px;
+  }
+
+  .intro h2 {
+    margin: 0 200px 0 200px;
+  }
+}
